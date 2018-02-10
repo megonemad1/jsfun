@@ -8,11 +8,11 @@ if (m.length>=1){
     setTimeout(()=>message(m.slice(1)),10000);
 }
 }
-setTimeout(()=>message(["Ok Mr Anderson",
+message(["Ok Mr Anderson",
 "it’s time for your medicines again",
 "Now now you know you need to take them",
 "It’s for your own good Mr Anderson please stop fighting back",
-"WE HAVE A CODE RED IN WARD THREE! REPEAT WE HAAAAAAAGHHHHH!!!"]),20000);
+"WE HAVE A CODE RED IN WARD THREE! REPEAT WE HAAAAAAAGHHHHH!!!"]);
 
 
 //var myWindow = window.open("", "", "width=200, height=100");
