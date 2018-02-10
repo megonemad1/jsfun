@@ -1,8 +1,7 @@
-
-    function exe(prev = ""){
+  function exe(prev = ""){
     try{
 
-var url = "https://raw.githubusercontent.com/megonemad1/jsfun/master/paperclip.js";
+var url = "https://raw.githubusercontent.com/megonemad1/jsfun/master/paperclip.js?_=" + new Date().getTime();
 var xmlHttp = new XMLHttpRequest();
 xmlHttp.open("GET", url, true);
 xmlHttp.onload = function(e) {
@@ -17,13 +16,15 @@ if (prev != x){
    prev = x;
     } 
   }
-}}
+}
+
+setTimeout(()=>exe(prev),5000);
+}
 xmlHttp.send();
     }
-    catch(e){
-
+    finally{
+exe();
     }
-setTimeout(()=>exe(prev),1000);
 console.log("execute");
     }
 exe();
