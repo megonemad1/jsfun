@@ -1,7 +1,7 @@
 function message(m= []){
 if (m.length>=1){
     alert(m[0]);
-    setTimeout(()=>message(m.slice(1)),1000);
+    setTimeout(()=>message(m.slice(1)),10000);
 }
 }
-message(["Everything is not fine!"]);
+message(["Callum please come back to us", "Visiting time is over now", "we'll come back tomorrow"]);
