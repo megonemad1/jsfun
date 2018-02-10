@@ -1,2 +1,1 @@
-var a = {msg:1};
-document.body.style.backgroundColor = "#eee";
+document.body.style.background = "#f1f442";
