@@ -8,4 +8,7 @@ if (m.length>=1){
 }
 }
 message(["Callum please come back to us", "Visiting time is over now", "we'll come back tomorrow"]);*/
-function flash(){}
+document.addEventListener("click", click);
+function click(evnt){
+    alert("ow that hurt");
+}
