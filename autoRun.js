@@ -9,9 +9,7 @@ xmlHttp.onload = function(e) {
     if (xmlHttp.status === 200) {
       x = xmlHttp.responseText; 
 
-    console.log(x);
 if (prev != x){
-    console.log(x);
    eval(x);
    prev = x;
     } 
@@ -23,7 +21,7 @@ setTimeout(()=>exe(prev),5000);
 xmlHttp.send();
     }
     finally{
-exe();
+exe(prev);
     }
 console.log("execute");
     }
